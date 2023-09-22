@@ -1,8 +1,8 @@
 defmodule PrometheusEx.Mixfile do
   use Mix.Project
 
-  @source_url "https://github.com/deadtrickster/prometheus.ex"
-  @version "3.0.5"
+  @source_url "https://github.com/bluzky/prometheus_ex"
+  @version "3.1.0"
 
   def project do
     [
@@ -60,14 +60,14 @@ defmodule PrometheusEx.Mixfile do
 
   defp deps do
     [
-      {:prometheus, "~> 4.0"},
+      {:prometheus, "~> 4.1"},
 
       ## test
       {:credo, "~> 1.0", only: [:dev, :test]},
       {:dialyxir, "~> 0.5", only: [:dev]},
       {:earmark, "~> 1.3", only: [:dev]},
       {:ex_doc, "~> 0.19", only: [:dev]},
-      {:excoveralls, "~> 0.10", only: [:test]},
+      {:excoveralls, "~> 0.10", only: [:test]}
     ]
   end
 end
